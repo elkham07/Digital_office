@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Office — Тренер</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Главное</div>
+      <a href="index.html" class="nav-item active"><i data-lucide="layout-dashboard"></i><span>Дашборд</span></a>
+      <a href="clients.html" class="nav-item"><i data-lucide="users"></i><span>Клиенты</span></a>
+      <a href="schedule.html" class="nav-item"><i data-lucide="calendar"></i><span>Расписание</span></a>
+
+      <div class="nav-label">Контент</div>
+      <a href="programs.html" class="nav-item"><i data-lucide="dumbbell"></i><span>Программы</span></a>
+      <a href="library.html" class="nav-item"><i data-lucide="book-open"></i><span>Библиотека</span></a>
+
+      <div class="nav-label">Финансы</div>
+      <a href="analytics.html" class="nav-item"><i data-lucide="bar-chart-2"></i><span>Аналитика</span></a>
+      <a href="payments.html" class="nav-item"><i data-lucide="credit-card"></i><span>Платежи</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="coach-card">
+        <div class="coach-avatar">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="Тренер">
+        </div>
+        <div>
+          <div class="coach-name">Алина С.</div>
+          <div class="coach-role">Фитнес-тренер</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Дашборд</div>
+        <div class="page-sub">Пятница, 25 апреля 2025</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn"><i data-lucide="search"></i></button>
+        <button class="icon-btn" id="theme-toggle"><i data-lucide="sun"></i></button>
+        <button class="icon-btn notif-btn">
+          <i data-lucide="bell"></i>
+          <div class="notif-dot"></div>
+        </button>
+        <div class="user-pill">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="">
+          <span>Алина</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- STATS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon si-murrey"><i data-lucide="users"></i></div>
+            <span class="stat-change up">+3</span>
+          </div>
+          <div class="stat-num">24</div>
+          <div class="stat-label">Активных клиентов</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon si-green"><i data-lucide="calendar-check"></i></div>
+            <span class="stat-change up">+12%</span>
+          </div>
+          <div class="stat-num">8</div>
+          <div class="stat-label">Тренировок сегодня</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon si-blue"><i data-lucide="book-open"></i></div>
+            <span class="stat-change up">+2</span>
+          </div>
+          <div class="stat-num">6</div>
+          <div class="stat-label">Программ активно</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top">
+            <div class="stat-icon si-orange"><i data-lucide="banknote"></i></div>
+            <span class="stat-change up">+8%</span>
+          </div>
+          <div class="stat-num">340K</div>
+          <div class="stat-label">Доход за месяц ₸</div>
+        </div>
+      </div>
+
+      <!-- TWO COL -->
+      <div class="two-col">
+
+        <!-- CLIENTS -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Клиенты</span>
+            <div style="display:flex;gap:10px;align-items:center;">
+              <button class="add-btn"><i data-lucide="plus"></i>Добавить</button>
+              <button class="panel-action">Все →</button>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a1" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Марина Ким</div>
+              <div class="c-meta">Похудение · 3 мес.</div>
+            </div>
+            <span class="c-status s-active">Активна</span>
+            <div class="c-prog">
+              <div class="c-prog-num">72%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill green-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a2" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Дмитрий Рахимов</div>
+              <div class="c-meta">Масса · 2 мес.</div>
+            </div>
+            <span class="c-status s-active">Активен</span>
+            <div class="c-prog">
+              <div class="c-prog-num">45%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill" style="width:45%"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a3" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Айгерим Сарова</div>
+              <div class="c-meta">Питание · 1 мес.</div>
+            </div>
+            <span class="c-status s-pending">Ожидает</span>
+            <div class="c-prog">
+              <div class="c-prog-num">10%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill" style="width:10%;background:#f59e0b"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a4" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Серик Абенов</div>
+              <div class="c-meta">Кардио · 4 мес.</div>
+            </div>
+            <span class="c-status s-active">Активен</span>
+            <div class="c-prog">
+              <div class="c-prog-num">88%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill green-fill" style="width:88%"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a5" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Наталья Воронова</div>
+              <div class="c-meta">Растяжка · 2 мес.</div>
+            </div>
+            <span class="c-status s-pause">Пауза</span>
+            <div class="c-prog">
+              <div class="c-prog-num">33%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill" style="width:33%;background:#666"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHEDULE -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Расписание сегодня</span>
+            <button class="panel-action">Все →</button>
+          </div>
+          <div class="schedule-list">
+            <div class="sched-item">
+              <div class="sched-time">09:00</div>
+              <div class="sched-dot dot-green"></div>
+              <div class="sched-info">
+                <div class="sched-name">Персональная тренировка</div>
+                <div class="sched-client">Марина Ким</div>
+              </div>
+              <span class="sched-badge sb-online">Онлайн</span>
+            </div>
+            <div class="sched-item">
+              <div class="sched-time">11:00</div>
+              <div class="sched-dot dot-murrey"></div>
+              <div class="sched-info">
+                <div class="sched-name">Групповой класс</div>
+                <div class="sched-client">6 участников</div>
+              </div>
+              <span class="sched-badge sb-offline">Оффлайн</span>
+            </div>
+            <div class="sched-item">
+              <div class="sched-time">13:30</div>
+              <div class="sched-dot dot-blue"></div>
+              <div class="sched-info">
+                <div class="sched-name">Консультация питания</div>
+                <div class="sched-client">Айгерим Сарова</div>
+              </div>
+              <span class="sched-badge sb-online">Онлайн</span>
+            </div>
+            <div class="sched-item">
+              <div class="sched-time">16:00</div>
+              <div class="sched-dot dot-orange"></div>
+              <div class="sched-info">
+                <div class="sched-name">Силовая тренировка</div>
+                <div class="sched-client">Дмитрий Рахимов</div>
+              </div>
+              <span class="sched-badge sb-offline">Оффлайн</span>
+            </div>
+            <div class="sched-item">
+              <div class="sched-time">18:30</div>
+              <div class="sched-dot dot-green"></div>
+              <div class="sched-info">
+                <div class="sched-name">Кардио сессия</div>
+                <div class="sched-client">Серик Абенов</div>
+              </div>
+              <span class="sched-badge sb-online">Онлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROGRAMS -->
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Программы</span>
+          <button class="add-btn"><i data-lucide="plus"></i>Новая программа</button>
+        </div>
+        <div class="prog-grid">
+          <div class="prog-card">
+            <div class="prog-icon pi-1"><i data-lucide="flame"></i></div>
+            <div class="prog-name">Похудение Pro</div>
+            <div class="prog-count">12 упражнений · 8 клиентов</div>
+            <div class="prog-bar"><div class="prog-fill pf-1"></div></div>
+          </div>
+          <div class="prog-card">
+            <div class="prog-icon pi-2"><i data-lucide="zap"></i></div>
+            <div class="prog-name">Набор массы</div>
+            <div class="prog-count">18 упражнений · 5 клиентов</div>
+            <div class="prog-bar"><div class="prog-fill pf-2"></div></div>
+          </div>
+          <div class="prog-card">
+            <div class="prog-icon pi-3"><i data-lucide="heart"></i></div>
+            <div class="prog-name">Кардио Базовый</div>
+            <div class="prog-count">8 упражнений · 11 клиентов</div>
+            <div class="prog-bar"><div class="prog-fill pf-3"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

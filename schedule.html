@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание — Digital Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Главное</div>
+      <a href="index.html" class="nav-item"><i data-lucide="layout-dashboard"></i><span>Дашборд</span></a>
+      <a href="clients.html" class="nav-item"><i data-lucide="users"></i><span>Клиенты</span></a>
+      <a href="schedule.html" class="nav-item active"><i data-lucide="calendar"></i><span>Расписание</span></a>
+
+      <div class="nav-label">Контент</div>
+      <a href="programs.html" class="nav-item"><i data-lucide="dumbbell"></i><span>Программы</span></a>
+      <a href="library.html" class="nav-item"><i data-lucide="book-open"></i><span>Библиотека</span></a>
+
+      <div class="nav-label">Финансы</div>
+      <a href="analytics.html" class="nav-item"><i data-lucide="bar-chart-2"></i><span>Аналитика</span></a>
+      <a href="payments.html" class="nav-item"><i data-lucide="credit-card"></i><span>Платежи</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="coach-card">
+        <div class="coach-avatar">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="Тренер">
+        </div>
+        <div>
+          <div class="coach-name">Алина С.</div>
+          <div class="coach-role">Фитнес-тренер</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Расписание</div>
+        <div class="page-sub">Ваш календарь тренировок</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn"><i data-lucide="chevron-left"></i></button>
+        <div style="font-weight:700; font-family:'Bebas Neue'; font-size:20px; letter-spacing:1px">Апрель 2025</div>
+        <button class="icon-btn"><i data-lucide="chevron-right"></i></button>
+        <button class="add-btn"><i data-lucide="plus"></i>Новое событие</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Сегодня, 25 апреля</span>
+        </div>
+        <div class="schedule-list">
+          <div class="sched-item">
+            <div class="sched-time">09:00</div>
+            <div class="sched-dot dot-green"></div>
+            <div class="sched-info">
+              <div class="sched-name">Персональная тренировка</div>
+              <div class="sched-client">Марина Ким</div>
+            </div>
+            <span class="sched-badge sb-online">Онлайн</span>
+          </div>
+          <div class="sched-item">
+            <div class="sched-time">11:00</div>
+            <div class="sched-dot dot-murrey"></div>
+            <div class="sched-info">
+              <div class="sched-name">Групповой класс</div>
+              <div class="sched-client">6 участников</div>
+            </div>
+            <span class="sched-badge sb-offline">Оффлайн</span>
+          </div>
+          <div class="sched-item">
+            <div class="sched-time">13:30</div>
+            <div class="sched-dot dot-blue"></div>
+            <div class="sched-info">
+              <div class="sched-name">Консультация питания</div>
+              <div class="sched-client">Айгерим Сарова</div>
+            </div>
+            <span class="sched-badge sb-online">Онлайн</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Завтра, 26 апреля</span>
+        </div>
+        <div class="schedule-list">
+          <div class="sched-item">
+            <div class="sched-time">10:00</div>
+            <div class="sched-dot dot-orange"></div>
+            <div class="sched-info">
+              <div class="sched-name">Силовая тренировка</div>
+              <div class="sched-client">Дмитрий Рахимов</div>
+            </div>
+            <span class="sched-badge sb-offline">Оффлайн</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

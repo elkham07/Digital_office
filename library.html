@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека — Digital Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Главное</div>
+      <a href="index.html" class="nav-item"><i data-lucide="layout-dashboard"></i><span>Дашборд</span></a>
+      <a href="clients.html" class="nav-item"><i data-lucide="users"></i><span>Клиенты</span></a>
+      <a href="schedule.html" class="nav-item"><i data-lucide="calendar"></i><span>Расписание</span></a>
+
+      <div class="nav-label">Контент</div>
+      <a href="programs.html" class="nav-item"><i data-lucide="dumbbell"></i><span>Программы</span></a>
+      <a href="library.html" class="nav-item active"><i data-lucide="book-open"></i><span>Библиотека</span></a>
+
+      <div class="nav-label">Финансы</div>
+      <a href="analytics.html" class="nav-item"><i data-lucide="bar-chart-2"></i><span>Аналитика</span></a>
+      <a href="payments.html" class="nav-item"><i data-lucide="credit-card"></i><span>Платежи</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="coach-card">
+        <div class="coach-avatar">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="Тренер">
+        </div>
+        <div>
+          <div class="coach-name">Алина С.</div>
+          <div class="coach-role">Фитнес-тренер</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Библиотека</div>
+        <div class="page-sub">База знаний и медиафайлы</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn"><i data-lucide="search"></i></button>
+        <button class="add-btn"><i data-lucide="upload"></i>Загрузить</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Упражнения</span>
+          <button class="panel-action">Посмотреть все</button>
+        </div>
+        <div style="padding: 15px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
+              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
+              <div style="font-size:12px; font-weight:600;">Приседания</div>
+           </div>
+           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
+              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
+              <div style="font-size:12px; font-weight:600;">Отжимания</div>
+           </div>
+           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
+              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
+              <div style="font-size:12px; font-weight:600;">Планка</div>
+           </div>
+           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
+              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
+              <div style="font-size:12px; font-weight:600;">Выпады</div>
+           </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Документы и Статьи</span>
+        </div>
+        <div style="padding: 15px;">
+           <div style="display:flex; align-items:center; gap:15px; padding:10px; border-bottom:1px solid var(--border);">
+              <i data-lucide="file-text" style="color:var(--muted2)"></i>
+              <div>
+                 <div style="font-size:13px; font-weight:600;">План питания на неделю.pdf</div>
+                 <div style="font-size:11px; color:var(--muted2)">1.2 MB · Загружено вчера</div>
+              </div>
+           </div>
+           <div style="display:flex; align-items:center; gap:15px; padding:10px;">
+              <i data-lucide="file-text" style="color:var(--muted2)"></i>
+              <div>
+                 <div style="font-size:13px; font-weight:600;">Рекомендации по сну.docx</div>
+                 <div style="font-size:11px; color:var(--muted2)">450 KB · Загружено 2 дня назад</div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

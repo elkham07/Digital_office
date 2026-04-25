@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платежи — Digital Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Главное</div>
+      <a href="index.html" class="nav-item"><i data-lucide="layout-dashboard"></i><span>Дашборд</span></a>
+      <a href="clients.html" class="nav-item"><i data-lucide="users"></i><span>Клиенты</span></a>
+      <a href="schedule.html" class="nav-item"><i data-lucide="calendar"></i><span>Расписание</span></a>
+
+      <div class="nav-label">Контент</div>
+      <a href="programs.html" class="nav-item"><i data-lucide="dumbbell"></i><span>Программы</span></a>
+      <a href="library.html" class="nav-item"><i data-lucide="book-open"></i><span>Библиотека</span></a>
+
+      <div class="nav-label">Финансы</div>
+      <a href="analytics.html" class="nav-item"><i data-lucide="bar-chart-2"></i><span>Аналитика</span></a>
+      <a href="payments.html" class="nav-item active"><i data-lucide="credit-card"></i><span>Платежи</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="coach-card">
+        <div class="coach-avatar">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="Тренер">
+        </div>
+        <div>
+          <div class="coach-name">Алина С.</div>
+          <div class="coach-role">Фитнес-тренер</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Платежи</div>
+        <div class="page-sub">Управление транзакциями и счетами</div>
+      </div>
+      <div class="topbar-right">
+        <button class="add-btn"><i data-lucide="plus"></i>Выставить счет</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">История транзакций</span>
+          <button class="panel-action">Фильтр</button>
+        </div>
+        <div class="payment-list">
+           <div class="client-row">
+              <div class="stat-icon si-green" style="width:32px; height:32px;"><i data-lucide="arrow-down-left"></i></div>
+              <div class="c-info">
+                 <div class="c-name">Оплата от Марины Ким</div>
+                 <div class="c-meta">25 Апр, 14:20 · Kaspi.kz</div>
+              </div>
+              <div style="font-weight:700; color:var(--accent)">+45,000 ₸</div>
+           </div>
+           <div class="client-row">
+              <div class="stat-icon si-green" style="width:32px; height:32px;"><i data-lucide="arrow-down-left"></i></div>
+              <div class="c-info">
+                 <div class="c-name">Оплата от Дмитрия Рахимова</div>
+                 <div class="c-meta">24 Апр, 10:15 · Банковская карта</div>
+              </div>
+              <div style="font-weight:700; color:var(--accent)">+60,000 ₸</div>
+           </div>
+           <div class="client-row">
+              <div class="stat-icon si-murrey" style="width:32px; height:32px; background:rgba(255,255,255,0.05); color:var(--muted2)"><i data-lucide="clock"></i></div>
+              <div class="c-info">
+                 <div class="c-name">Счет для Айгерим Саровой</div>
+                 <div class="c-meta">23 Апр, 09:00 · Ожидание</div>
+              </div>
+              <div style="font-weight:700; color:var(--muted2)">35,000 ₸</div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты — Digital Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-label">Главное</div>
+      <a href="index.html" class="nav-item"><i data-lucide="layout-dashboard"></i><span>Дашборд</span></a>
+      <a href="clients.html" class="nav-item active"><i data-lucide="users"></i><span>Клиенты</span></a>
+      <a href="schedule.html" class="nav-item"><i data-lucide="calendar"></i><span>Расписание</span></a>
+
+      <div class="nav-label">Контент</div>
+      <a href="programs.html" class="nav-item"><i data-lucide="dumbbell"></i><span>Программы</span></a>
+      <a href="library.html" class="nav-item"><i data-lucide="book-open"></i><span>Библиотека</span></a>
+
+      <div class="nav-label">Финансы</div>
+      <a href="analytics.html" class="nav-item"><i data-lucide="bar-chart-2"></i><span>Аналитика</span></a>
+      <a href="payments.html" class="nav-item"><i data-lucide="credit-card"></i><span>Платежи</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="coach-card">
+        <div class="coach-avatar">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="Тренер">
+        </div>
+        <div>
+          <div class="coach-name">Алина С.</div>
+          <div class="coach-role">Фитнес-тренер</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Клиенты</div>
+        <div class="page-sub">Список ваших подопечных</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn"><i data-lucide="search"></i></button>
+        <button class="add-btn"><i data-lucide="plus"></i>Добавить клиента</button>
+        <div class="user-pill">
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=coach123" alt="">
+          <span>Алина</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Все клиенты (24)</span>
+          <div style="display:flex;gap:10px;">
+             <button class="panel-action">Фильтры</button>
+             <button class="panel-action">Экспорт</button>
+          </div>
+        </div>
+        
+        <!-- Table-like layout -->
+        <div class="client-list">
+          <!-- Repeat client row from index but maybe with more info -->
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a1" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Марина Ким</div>
+              <div class="c-meta">marina.kim@example.com · +7 777 123 45 67</div>
+            </div>
+            <div style="flex:1; font-size:12px; color:var(--muted2)">Похудение Pro</div>
+            <span class="c-status s-active">Активна</span>
+            <div class="c-prog">
+              <div class="c-prog-num">72%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill green-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a2" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Дмитрий Рахимов</div>
+              <div class="c-meta">dima.r@example.com · +7 701 987 65 43</div>
+            </div>
+            <div style="flex:1; font-size:12px; color:var(--muted2)">Набор массы</div>
+            <span class="c-status s-active">Активен</span>
+            <div class="c-prog">
+              <div class="c-prog-num">45%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill" style="width:45%"></div></div>
+            </div>
+          </div>
+          <!-- More clients... -->
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a3" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Айгерим Сарова</div>
+              <div class="c-meta">aigerim.s@example.com · +7 705 555 44 33</div>
+            </div>
+            <div style="flex:1; font-size:12px; color:var(--muted2)">Питание</div>
+            <span class="c-status s-pending">Ожидает</span>
+            <div class="c-prog">
+              <div class="c-prog-num">10%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill" style="width:10%;background:#f59e0b"></div></div>
+            </div>
+          </div>
+          <div class="client-row">
+            <div class="c-avatar"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=a4" alt=""></div>
+            <div class="c-info">
+              <div class="c-name">Серик Абенов</div>
+              <div class="c-meta">serik.a@example.com · +7 747 111 22 33</div>
+            </div>
+            <div style="flex:1; font-size:12px; color:var(--muted2)">Кардио Базовый</div>
+            <span class="c-status s-active">Активен</span>
+            <div class="c-prog">
+              <div class="c-prog-num">88%</div>
+              <div class="c-prog-bar"><div class="c-prog-fill green-fill" style="width:88%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
