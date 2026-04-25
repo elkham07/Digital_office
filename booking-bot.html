@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Bot — Digital Office</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- SIDEBAR (Dynamic via main.js) -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">COACHFORGE</span>
+        <span class="sub">Digital Office</span>
+      </div>
+    </div>
+    <nav class="nav"></nav>
+    <div class="sidebar-footer"></div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title">Booking Bot</div>
+        <div class="page-sub">Автоматизация записей и уведомлений</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn" id="theme-toggle"><i data-lucide="sun"></i></button>
+        <button class="add-btn"><i data-lucide="settings"></i>Настроить бота</button>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ваш помощник</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 400px; text-align: center;">
+          <div style="width: 80px; height: 80px; background: var(--murrey-glow); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <i data-lucide="bot" style="width: 40px; height: 40px; color: var(--murrey);"></i>
+          </div>
+          <h2 style="font-size: 24px; margin-bottom: 12px;">Бот пока не активен</h2>
+          <p style="color: var(--muted); max-width: 400px; margin-bottom: 32px;">Подключите ваш Telegram или WhatsApp, чтобы бот автоматически записывал клиентов на тренировки и присылал вам уведомления.</p>
+          <div style="display: flex; gap: 16px;">
+            <button class="add-btn" style="background: #24A1DE; border-color: #24A1DE;"><i data-lucide="send"></i>Telegram Bot</button>
+            <button class="add-btn" style="background: #25D366; border-color: #25D366;"><i data-lucide="message-circle"></i>WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

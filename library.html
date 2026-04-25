@@ -60,58 +60,31 @@
         <div class="page-sub">База знаний и медиафайлы</div>
       </div>
       <div class="topbar-right">
+        <button class="icon-btn" id="theme-toggle"><i data-lucide="sun"></i></button>
         <button class="icon-btn"><i data-lucide="search"></i></button>
         <button class="add-btn"><i data-lucide="upload"></i>Загрузить</button>
       </div>
     </div>
 
     <div class="content">
+      
+      <!-- EXERCISES -->
       <div class="panel">
         <div class="panel-header">
           <span class="panel-title">Упражнения</span>
           <button class="panel-action">Посмотреть все</button>
         </div>
-        <div style="padding: 15px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
-           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
-              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
-              <div style="font-size:12px; font-weight:600;">Приседания</div>
-           </div>
-           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
-              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
-              <div style="font-size:12px; font-weight:600;">Отжимания</div>
-           </div>
-           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
-              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
-              <div style="font-size:12px; font-weight:600;">Планка</div>
-           </div>
-           <div style="background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px; text-align:center;">
-              <i data-lucide="video" style="width:30px; height:30px; color:var(--murrey-light); margin-bottom:10px;"></i>
-              <div style="font-size:12px; font-weight:600;">Выпады</div>
-           </div>
-        </div>
+        <div class="prog-grid"></div>
       </div>
 
-      <div class="panel">
+      <!-- DOCUMENTS -->
+      <div class="panel" style="margin-top:24px">
         <div class="panel-header">
           <span class="panel-title">Документы и Статьи</span>
         </div>
-        <div style="padding: 15px;">
-           <div style="display:flex; align-items:center; gap:15px; padding:10px; border-bottom:1px solid var(--border);">
-              <i data-lucide="file-text" style="color:var(--muted2)"></i>
-              <div>
-                 <div style="font-size:13px; font-weight:600;">План питания на неделю.pdf</div>
-                 <div style="font-size:11px; color:var(--muted2)">1.2 MB · Загружено вчера</div>
-              </div>
-           </div>
-           <div style="display:flex; align-items:center; gap:15px; padding:10px;">
-              <i data-lucide="file-text" style="color:var(--muted2)"></i>
-              <div>
-                 <div style="font-size:13px; font-weight:600;">Рекомендации по сну.docx</div>
-                 <div style="font-size:11px; color:var(--muted2)">450 KB · Загружено 2 дня назад</div>
-              </div>
-           </div>
-        </div>
+        <div class="doc-list"></div>
       </div>
+
     </div>
   </main>
 </div>
